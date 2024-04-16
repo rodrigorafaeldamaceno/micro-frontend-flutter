@@ -15,11 +15,11 @@ dependencies:
   commons_dependencies:
     path: "../commons_dependencies"
   module_splash:
-    path: "../module_splash"
+    path: "../modules/module_splash"
   module_login:
-    path: "../module_login"
+    path: "../modules/module_login"
   module_home:
-    path: "../module_home"
+    path: "../modules/module_home"
 
 dev_dependencies:
   flutter_test:
