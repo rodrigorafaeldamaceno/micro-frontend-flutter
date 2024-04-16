@@ -1,5 +1,5 @@
 import 'package:commons_dependencies/domain/entities/event_entity.dart';
-import 'package:commons_dependencies/domain/services/I_event_bus_service.dart';
+import 'package:commons_dependencies/domain/services/i_event_bus_service.dart';
 import 'package:commons_dependencies/infra/drivers/i_event_bus_driver.dart';
 
 class EventBusService implements IEventBusService {
