@@ -195,21 +195,21 @@ packages:
   module_home:
     dependency: transitive
     description:
-      path: "../module_home"
+      path: "../modules/module_home"
       relative: true
     source: path
     version: "0.0.1"
   module_login:
     dependency: transitive
     description:
-      path: "../module_login"
+      path: "../modules/module_login"
       relative: true
     source: path
     version: "0.0.1"
   module_splash:
     dependency: transitive
     description:
-      path: "../module_splash"
+      path: "../modules/module_splash"
       relative: true
     source: path
     version: "0.0.1"
