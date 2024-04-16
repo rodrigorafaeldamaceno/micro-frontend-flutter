@@ -1,6 +1,6 @@
-import 'package:commons_dependencies/commons_dependencies.dart';
+import 'package:core/core.dart';
 
-class EventEntity<T> extends AppEvent {
+class EventEntity<T> extends Equatable {
   final String name;
   final T? data;
 
