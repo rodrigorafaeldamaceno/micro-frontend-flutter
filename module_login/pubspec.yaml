@@ -1,18 +1,18 @@
 name: module_login
 description: "A new Flutter package project."
 version: 0.0.1
-publish_to: 'none'
+publish_to: "none"
 
 environment:
-  sdk: '>=3.3.3 <4.0.0'
+  sdk: ">=3.3.3 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-  commons_dependencies:
-    path: ../commons_dependencies
+  core:
+    path: ../core
 
 dev_dependencies:
   flutter_test:
