@@ -11,18 +11,28 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: GridView.builder(
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 3,
-        ),
-        itemCount: 10,
-        itemBuilder: (BuildContext context, int index) {
-          return Card(
-            child: Center(
-              child: Text('Item $index'),
+      appBar: AppBar(
+        title: const Text('Home Page'),
+      ),
+      body: Column(
+        children: [
+          Expanded(
+            child: GridView.builder(
+              gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+                maxCrossAxisExtent: 150,
+                childAspectRatio: 0.7,
+              ),
+              itemCount: 50,
+              itemBuilder: (BuildContext context, int index) {
+                return Card(
+                  child: Center(
+                    child: Text('Item ${index + 1}'),
+                  ),
+                );
+              },
             ),
-          );
-        },
+          ),
+        ],
       ),
     );
   }

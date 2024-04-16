@@ -12,9 +12,14 @@ class AppWidget extends StatelessWidget {
       title: 'My App',
       routerConfig: Modular.routerConfig,
       debugShowCheckedModeBanner: false,
-      // localizationsDelegates: context.localizationDelegates,
-      // supportedLocales: context.supportedLocales,
-      // locale: context.locale,
+      theme: ThemeData(
+        appBarTheme: const AppBarTheme(
+          centerTitle: true,
+          elevation: 0,
+        ),
+        primarySwatch: Colors.teal,
+        brightness: Brightness.dark,
+      ),
     );
   }
 }

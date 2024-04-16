@@ -15,7 +15,7 @@ class _LoginPageState extends State<LoginPage> {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            Modular.to.pushNamed('/home');
+            Modular.to.pushNamedAndRemoveUntil('/home', (_) => false);
           },
           child: const Text('Login'),
         ),
