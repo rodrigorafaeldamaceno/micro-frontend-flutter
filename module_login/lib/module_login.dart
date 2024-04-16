@@ -1,7 +1,16 @@
 library module_login;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+import 'package:flutter_modular/flutter_modular.dart';
+import 'package:module_login/presenter/pages/login_page.dart';
+
+class LoginModule extends Module {
+  @override
+  void binds(i) {
+    // i.addLazySingleton(AuthStore.new);
+  }
+
+  @override
+  void routes(r) {
+    r.child('/', child: (context) => const LoginPage());
+  }
 }
