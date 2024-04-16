@@ -1,6 +1,6 @@
-import 'package:commons_dependencies/commons_dependencies.dart';
-import 'package:commons_dependencies/domain/entities/event_entity.dart';
-import 'package:commons_dependencies/infra/drivers/i_event_bus_driver.dart';
+import 'package:commons/domain/entities/event_entity.dart';
+import 'package:commons/infra/drivers/i_event_bus_driver.dart';
+import 'package:core/core.dart';
 
 class EventBusDriver implements IEventBusDriver {
   final _eventBus = EventBus();
