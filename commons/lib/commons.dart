@@ -1,17 +1,19 @@
 library commons;
 
-import 'package:commons/domain/services/i_event_bus_service.dart';
-import 'package:commons/external/drivers/event_bus_driver.dart';
-import 'package:commons/infra/drivers/i_event_bus_driver.dart';
-import 'package:commons/infra/services/event_bus_service.dart';
 import 'package:core/core.dart';
 
 export 'commons.dart';
+export 'domain/domain.dart';
+export 'external/external.dart';
+export 'infra/infra.dart';
 
-class Commons extends Module {
+class CommonsModule extends Module {
+  static IEventBusDriver get eventBusDriver => EventBusDriver();
+  static IEventBusService get eventBusService =>
+      EventBusService(driver: eventBusDriver);
   @override
   void exportedBinds(Injector i) {
-    i.addLazySingleton<IEventBusDriver>(EventBusDriver.new);
-    i.addLazySingleton<IEventBusService>(EventBusService.new);
+    i.addInstance<IEventBusDriver>(eventBusDriver);
+    i.addInstance<IEventBusService>(eventBusService);
   }
 }

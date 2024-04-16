@@ -10,7 +10,7 @@ class AppModule extends Module {
   @override
   void routes(r) {
     r.module('/', module: SplashModule());
-    r.module('/login', module: LoginModule());
-    r.module('/home', module: HomeModule());
+    r.module('/login/', module: LoginModule());
+    r.module('/home/', module: HomeModule());
   }
 }

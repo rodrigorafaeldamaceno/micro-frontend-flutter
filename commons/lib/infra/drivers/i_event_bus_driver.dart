@@ -1,6 +1,6 @@
 import 'package:commons/domain/entities/event_entity.dart';
 
 abstract class IEventBusDriver {
-  void publish(String eventName, Map<String, dynamic> data);
-  Stream<EventEntity> on(String eventName);
+  void publish<T>(String eventName, T? data);
+  Stream<EventEntity<T>> on<T>(String eventName);
 }

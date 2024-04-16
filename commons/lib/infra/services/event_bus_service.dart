@@ -8,12 +8,12 @@ class EventBusService implements IEventBusService {
   EventBusService({required this.driver});
 
   @override
-  Stream<EventEntity> on(String eventName) {
-    return driver.on(eventName);
+  Stream<EventEntity<T>> on<T>(String eventName) {
+    return driver.on<T>(eventName);
   }
 
   @override
-  void publish(EventEntity event) {
+  void publish<T>(EventEntity<T> event) {
     driver.publish(event.name, event.data);
   }
 }
