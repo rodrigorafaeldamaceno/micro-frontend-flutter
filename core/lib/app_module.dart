@@ -1,4 +1,4 @@
-import 'package:flutter_modular/flutter_modular.dart';
+import 'package:core/core.dart';
 import 'package:module_home/module_home.dart';
 import 'package:module_login/module_login.dart';
 

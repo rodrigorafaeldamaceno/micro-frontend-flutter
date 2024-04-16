@@ -1,6 +1,6 @@
 library module_login;
 
-import 'package:flutter_modular/flutter_modular.dart';
+import 'package:core/core.dart';
 import 'package:module_login/presenter/pages/login_page.dart';
 
 class LoginModule extends Module {
